@@ -15,7 +15,8 @@ const client = new Client({
 });
 
 const IMAGE = new AttachmentBuilder('./images/Possum.jpg'); // Use the correct extension
-const CHANNEL_ID = process.env.DISCORD_CHANNEL_ID;
+const CHANNEL_ID = process.env.CHANNEL_ID;
+console.log("Loaded channel ID:", CHANNEL_ID);  // <-- ADD THIS LINE
 const URL = "https://possum-listener-9ick.onrender.com/mint.json";
 
 async function sendDetonatorUpdate() {
