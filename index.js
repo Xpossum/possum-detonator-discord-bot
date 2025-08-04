@@ -48,7 +48,7 @@ client.once("ready", () => {
   sendDetonatorUpdate();
 });
 
-// Every 3 hours
-setInterval(sendDetonatorUpdate, 3 * 60 * 60 * 1000);
+// Every 6 hours
+setInterval(sendDetonatorUpdate, 6 * 60 * 60 * 1000);
 
 client.login(process.env.DISCORD_BOT_TOKEN);
